@@ -1,0 +1,33 @@
+version: '3.4'
+
+services:
+
+  api:
+    build: ./backend/
+    ports:
+      - "3001:3001"
+    networks:
+      - mynetwork
+
+  web:
+    build: ./fontend/
+    ports:
+      - "3000:3000"
+    networks:
+      - mynetwork
+
+  nginx:
+    image: nginx
+    volumes:
+      - ./conf.d:/etc/nginx/conf.d
+    ports:
+      - "80:80"
+    networks:
+      - mynetwork
+    depends_on:
+      - api
+      - web
+      
+networks:
+  mynetwork:
+    driver: bridge

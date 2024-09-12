@@ -1,0 +1,89 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: rgb(12, 24, 14);
+    z-index: inherit;
+    margin-bottom: auto;
+}
+/* Navbarcss.css */
+.loading-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* ค่ามากเพื่อให้อยู่ด้านบนสุด */
+  }
+  
+.div-logout {
+    margin-top: auto;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.logout {
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 6rem;
+    color: white;
+}
+
+.div-main {
+    display: grid;
+}
+
+.container-none {
+    display: none;
+}
+
+.div-input-search {
+    padding: 2rem 2rem 2rem 2rem;
+    margin-bottom: auto;
+}
+
+.div-main-chat {
+    margin-top: auto;
+    width: 100%;
+    overflow-y: auto;
+}
+
+
+.div-chat {
+    display: flex;
+    cursor: pointer;
+    padding: 10px 10px 10px 25px;
+}
+
+.div-chat:hover,
+.div-chat.active {
+    background-color: rgb(66, 65, 65);
+}
+
+
+.div-detail-chat {
+    display: grid;
+
+}
+
+.name {
+    cursor: pointer;
+    color: white;
+    margin-left: 25px;
+}
+
+.text-chat {
+    cursor: pointer;
+    color: gray;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-grow: 1;
+    }
+
+}

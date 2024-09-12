@@ -1,0 +1,127 @@
+.container {
+  display: flex;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 99.8vh;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  /* ให้แถบทุกอย่างอยู่ตรงกลางในแนวตั้ง */
+  justify-content: space-between;
+  background-color: #1a1a1a;
+  padding: 10px;
+  color: white;
+  position: relative;
+  height: 60px;
+  /* กำหนดความสูงของแถบหัวเรื่อง */
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+.chat-message {
+  margin-bottom: 10px;
+  padding: 13px;
+  border-radius: 15px;
+  display: inline-block;
+  clear: both;
+  max-width: 50%;
+  /* Adjust this value if needed */
+  word-wrap: break-word;
+}
+
+.chat-message.user {
+  font-size: 0.9rem;
+  background-color: #DCF8C6;
+  float: right;
+
+  /* Align to right */
+}
+
+.read-status-user {
+  display: block;
+  font-size: 0.75rem;
+  color: #888;
+  text-align: right;
+}
+
+.read-status-other {
+  display: block;
+  font-size: 0.75rem;
+  color: #888;
+  text-align: left;
+}
+
+.chat-message.other {
+  font-size: 0.9rem;
+  background-color: #E5E5EA;
+  float: left;
+  /* Align to left */
+}
+
+.chat-input-container {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.chat-input-container input {
+  flex: 1;
+  padding: 10px;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.chat-input-container button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chat-input-container button:hover {
+  background-color: #45a049;
+}
+
+
+.menu-icon {
+  cursor: pointer;
+}
+
+.menu-icon .line {
+  width: 30px;
+  height: 4px;
+  background-color: gray;
+  margin: 5px 0;
+}
+
+.chat-title {
+  flex-grow: 1;
+  text-align: center;
+  /* จัดให้อยู่ตรงกลางในแนวนอน */
+  font-size: 20px;
+  /* กำหนดขนาดฟอนต์ */
+  margin-right: 60px;
+  /* เว้นที่ให้แถบสามขีดด้านขวา */
+}

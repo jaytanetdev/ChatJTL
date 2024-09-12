@@ -1,0 +1,22 @@
+.button-add {
+    background: #42bd41;
+    color: white;
+    margin-top: 0.3rem
+}
+.button-receiver-friend {
+    background: rgb(52, 59, 188);
+    color: white;
+    margin-top: 0.3rem
+}
+
+.avata-btn {
+    background: #339933;
+    color: white;
+    cursor: pointer;
+    width: 35px;
+    height: 30px
+}
+.avata-btn:hover {
+    background: #42ca44;
+
+}
